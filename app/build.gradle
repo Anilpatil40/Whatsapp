@@ -43,4 +43,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.github.Anilpatil40:CustomDialog:1.0'
+    implementation "com.github.nikartm:fit-button:1.2.1"
 }
