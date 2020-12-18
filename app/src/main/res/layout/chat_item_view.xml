@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.nikartm.button.FitButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:fb_rippleColor="#32000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/cardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            app:cardCornerRadius="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:elevation="0dp">
+
+            <ImageView
+                android:id="@+id/dp_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/white_person_filled"/>
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:text="username"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/cardView"
+            android:layout_alignTop="@id/cardView"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:text="message"
+            android:layout_toRightOf="@id/cardView"
+            android:layout_alignBottom="@id/cardView"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp"
+            android:text="10/10/20"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/cardView"/>
+
+    </RelativeLayout>
+
+</com.github.nikartm.button.FitButton>

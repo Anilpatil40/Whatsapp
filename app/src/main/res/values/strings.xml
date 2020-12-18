@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Whatsapp</string>
+    <string name="app_name">WhatsApp</string>
     <string name="back4app_server_url">https://parseapi.back4app.com</string>
     <string name="back4app_app_id">hq5Hh8j1AG2RXy5TXet71rvg6s8T1oKSqxndby47</string>
     <string name="back4app_client_id">bqlPrrLoHkfNjovJooIpIS26m7SKFqIIvUyLOJkt</string>

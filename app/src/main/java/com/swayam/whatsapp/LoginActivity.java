@@ -48,7 +48,8 @@ public class LoginActivity extends AppCompatActivity {
             public void done(ParseUser user, ParseException e) {
                 dialog.dismiss();
                 if (e == null){
-                    showSuccessMessage("login credentials are correct");
+                    startActivity(new Intent(LoginActivity.this,Home.class));
+                    finish();
                 }else {
                     showErrorMessage(e.getMessage());
                 }

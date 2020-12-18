@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whatsapp_color"
+        app:title="@string/app_name"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        tools:menu="@menu/menu"
+        app:titleTextColor="@color/white"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whatsapp_color"
+        app:tabTextColor="@color/white_hint_color"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="3dp"
+        android:theme="@style/Theme.Whatsapp.ButtonTheme"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorFullWidth="true"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

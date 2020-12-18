@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Whatsapp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/whatsapp_color</item>
+        <item name="colorPrimaryVariant">@color/whatsapp_color</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -19,5 +19,9 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.Whatsapp.ButtonTheme" parent="Theme.Whatsapp">
+        <item name="colorPrimary">@color/white</item>
     </style>
 </resources>
