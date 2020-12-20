@@ -12,5 +12,6 @@
     <color name="transparent">#00FFFFFF</color>
     <color name="white_hint_color">#80FFFFFF</color>
     <color name="black_hint_color">#80000000</color>
-    <color name="light_green">#10C303</color>
+    <color name="light_green">#88F89E</color>
+    <color name="black_riple_color">#32000000</color>
 </resources>

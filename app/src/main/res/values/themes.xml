@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Whatsapp" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.WhatsApp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/whatsapp_color</item>
         <item name="colorPrimaryVariant">@color/whatsapp_color</item>
@@ -14,14 +14,14 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Whatsapp.FullScreen" parent="Theme.Whatsapp">
+    <style name="Theme.WhatsApp.FullScreen" parent="Theme.WhatsApp">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="Theme.Whatsapp.ButtonTheme" parent="Theme.Whatsapp">
+    <style name="Theme.WhatsApp.ButtonTheme" parent="Theme.WhatsApp">
         <item name="colorPrimary">@color/white</item>
     </style>
 </resources>

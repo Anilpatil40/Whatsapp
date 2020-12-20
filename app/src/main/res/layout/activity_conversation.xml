@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    tools:context=".ConversationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whatsapp_color"
+        android:padding="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/conversation_menu">
+
+        <com.github.nikartm.button.FitButton
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            app:fb_icon="@drawable/arrow_back"
+            android:gravity="center"
+            app:fb_rippleColor="@color/black_riple_color"
+            app:fb_iconWidth="40dp"
+            app:fb_iconHeight="40dp"
+            android:onClick="backPressed"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/white_person_filled" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="username"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/bottombar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sendButton"
+        app:layout_constraintBottom_toBottomOf="@id/sendButton">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="-10dp"
+            android:background="@drawable/triangle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="10dp"
+           android:background="@drawable/rectangle">
+
+           <com.github.nikartm.button.FitButton
+               android:id="@+id/emojiButton"
+               android:layout_width="55dp"
+               android:layout_height="55dp"
+               app:fb_cornerRadius="30dp"
+               app:fb_icon="@drawable/emoji_black"
+               app:fb_iconWidth="30dp"
+               app:fb_iconHeight="30dp"
+               android:gravity="center"
+               app:fb_rippleColor="@color/black_riple_color"
+               android:layout_alignBottom="@id/messageTextField"
+               android:onClick="emojiPressed"/>
+
+           <EditText
+               android:id="@+id/messageTextField"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:minHeight="55dp"
+               android:maxHeight="155dp"
+               android:foregroundTint="@color/transparent"
+               android:backgroundTint="@color/transparent"
+               android:layout_toRightOf="@id/emojiButton"
+               android:layout_toLeftOf="@id/pinButton" />
+
+           <com.github.nikartm.button.FitButton
+               android:id="@+id/pinButton"
+               android:layout_width="55dp"
+               android:layout_height="55dp"
+               android:layout_toLeftOf="@id/cameraButton"
+               app:fb_icon="@drawable/attachment_black"
+               android:gravity="center"
+               app:fb_iconWidth="30dp"
+               app:fb_iconHeight="30dp"
+               app:fb_cornerRadius="30dp"
+               app:fb_rippleColor="@color/black_riple_color"
+               android:layout_alignBottom="@id/messageTextField"/>
+
+           <com.github.nikartm.button.FitButton
+               android:id="@+id/cameraButton"
+               android:layout_width="55dp"
+               android:layout_height="55dp"
+               android:layout_alignParentEnd="true"
+               app:fb_icon="@drawable/camera_black"
+               android:gravity="center"
+               app:fb_iconWidth="30dp"
+               app:fb_iconHeight="30dp"
+               app:fb_cornerRadius="30dp"
+               app:fb_rippleColor="@color/black_riple_color"
+               android:layout_alignBottom="@id/messageTextField"/>
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.github.nikartm.button.FitButton
+        android:id="@+id/sendButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        app:fb_backgroundColor="@color/whatsapp_color"
+        app:fb_icon="@drawable/send_icon"
+        app:fb_iconWidth="30dp"
+        app:fb_iconHeight="30dp"
+        app:fb_cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="sendMessage"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.swayam.whatsapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -58,7 +59,7 @@ public class ChatFragment extends Fragment {
                 ParseObject object = new ParseObject("Messages");
                 object.put("from","panil8993");
                 object.put("message","this is me");
-                object.put("time",new Date());
+                object.put("date",new Date());
                 adapter.addParseObject(object);
             }
         });
@@ -73,9 +74,8 @@ public class ChatFragment extends Fragment {
         adapter.setOnItemSelectListener(new ChatRecyclerViewAdapter.OnItemSelectListener() {
             @Override
             public void selected(String username) {
-                CustomDialog dialog = new CustomDialog(getContext(),CustomDialog.SUCCESS);
-                dialog.setTitle(username);
-                dialog.show();
+                startActivity(new Intent(getContext(),ConversationActivity.class).putExtra("USER",username));
+                getActivity().finish();
             }
         });
 

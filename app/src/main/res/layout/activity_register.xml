@@ -26,7 +26,7 @@
         android:drawableLeft="@drawable/person_white"
         android:drawablePadding="20dp"
         android:textColorHint="@color/hint_color"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/ring_outlined"
         android:textColor="@color/white"
         />
 
@@ -40,7 +40,7 @@
         android:drawableLeft="@drawable/person_protected"
         android:drawablePadding="20dp"
         android:textColorHint="@color/hint_color"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/ring_outlined"
         android:textColor="@color/white"
         android:inputType="textPassword" />
 
@@ -54,7 +54,7 @@
         android:drawableLeft="@drawable/mail"
         android:drawablePadding="20dp"
         android:textColorHint="@color/hint_color"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/ring_outlined"
         android:textColor="@color/white"
         />
 
