@@ -26,7 +26,7 @@
             android:layout_height="55dp"
             app:fb_icon="@drawable/arrow_back"
             android:gravity="center"
-            app:fb_rippleColor="@color/black_riple_color"
+            app:fb_rippleColor="@color/black_ripple_color"
             app:fb_iconWidth="40dp"
             app:fb_iconHeight="40dp"
             android:onClick="backPressed"/>
@@ -101,7 +101,7 @@
                app:fb_iconWidth="30dp"
                app:fb_iconHeight="30dp"
                android:gravity="center"
-               app:fb_rippleColor="@color/black_riple_color"
+               app:fb_rippleColor="@color/black_ripple_color"
                android:layout_alignBottom="@id/messageTextField"
                android:onClick="emojiPressed"/>
 
@@ -126,7 +126,7 @@
                app:fb_iconWidth="30dp"
                app:fb_iconHeight="30dp"
                app:fb_cornerRadius="30dp"
-               app:fb_rippleColor="@color/black_riple_color"
+               app:fb_rippleColor="@color/black_ripple_color"
                android:layout_alignBottom="@id/messageTextField"/>
 
            <com.github.nikartm.button.FitButton
@@ -139,7 +139,7 @@
                app:fb_iconWidth="30dp"
                app:fb_iconHeight="30dp"
                app:fb_cornerRadius="30dp"
-               app:fb_rippleColor="@color/black_riple_color"
+               app:fb_rippleColor="@color/black_ripple_color"
                android:layout_alignBottom="@id/messageTextField"/>
 
        </RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ImagePicker">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:background="@color/white_20_alpha"
+        android:layout_alignParentBottom="true">
+
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/emojiButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            app:fb_icon="@drawable/emoji_black"
+            android:gravity="center"
+            app:fb_iconWidth="40dp"
+            app:fb_iconHeight="40dp"
+            app:fb_cornerRadius="25dp"
+            app:fb_rippleColor="@color/black_ripple_color"/>
+
+        <EditText
+            android:id="@+id/text_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/emojiButton"
+            android:layout_toLeftOf="@id/sendButton"
+            android:backgroundTint="@color/transparent"
+            android:layout_centerVertical="true"
+            android:maxHeight="150dp"/>
+
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/sendButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            app:fb_icon="@drawable/send_icon"
+            app:fb_backgroundColor="@color/whatsapp_color"
+            android:gravity="center"
+            app:fb_iconWidth="30dp"
+            app:fb_iconHeight="30dp"
+            app:fb_cornerRadius="25dp"
+            app:fb_rippleColor="@color/black_ripple_color"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
