@@ -8,7 +8,7 @@ This is clone app of WhatsApp.
 
 ## FEATURES
 * chats like WhatsApp
-* posting status and viewving post
+* posting status and viewing post
 * look and feel like WhatsApp
 
 ## THIRD PARTY LIBRARY USED
